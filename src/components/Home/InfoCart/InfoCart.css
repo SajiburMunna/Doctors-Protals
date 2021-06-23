@@ -1,0 +1,13 @@
+.info-primary{
+    background-color: aquamarine;
+}
+.info-dark{
+    background-color: aquamarine;
+}
+.info-container{
+    height: 120px;
+    padding: 40px;
+}
+.margin{
+    margin-top: 120px;
+}

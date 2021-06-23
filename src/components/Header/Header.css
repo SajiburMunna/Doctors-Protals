@@ -1,0 +1,18 @@
+.Header-Container {
+    height:650px;
+   
+    position:relative;
+    background-image: url(../../images/headerBg.png);
+    background-size: cover;
+     
+}
+.Header-Container::after  {
+    height:650px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+    background-color:#3D4558 ;
+    z-index: -10;
+}
