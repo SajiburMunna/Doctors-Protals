@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import { Carousel } from 'react-bootstrap';
+import { Card,CardGroup } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-  import s1 from '../../../images/s1.png'
- import s2 from '../../../images/s2.png'
- import s3 from '../../../images/s3.png'
+ 
  
 const ServicesDetails = ({ser}) => {
   console.log(ser);
@@ -12,24 +10,19 @@ const ServicesDetails = ({ser}) => {
     
     
     return (
-        <div>
-           <Carousel>
-           <Carousel.Item>
-    <img
-      className="   "
-      src= {ser.img}
-      alt=" "
-    />
-    <Carousel.Caption>
-      <h3 style={{color:'red'}}>{ser.name}</h3>
-      <p  style={{color:'red'}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-      </Carousel.Item>
+         <CardGroup>
 
-  
+<Card  style={{height:"300px",width:"300px",margin:"10px"}} >
+    <Card.Img  style={{height:"100px",width:"150px", marginLeft:"70px",padding:"10px"}}  variant="top" src= {ser.img}/>
+    <Card.Body>
+      <Card.Title>{ser.name}</Card.Title>
+      <Card.Text>
+         {ser.description}
+      </Card.Text>
+    </Card.Body>
     
-           </Carousel>
-        </div>
+  </Card>
+         </CardGroup>
     )
 }
 

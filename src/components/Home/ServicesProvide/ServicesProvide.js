@@ -12,18 +12,18 @@ const ServicesProvide = () => {
         {
             img:s1,
             name:'Fluoride Treatment',
-            despription:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab cum eveniet repudiandae, possimus natus blanditiis corrupti doloremque est quibusdam a dolorem modi? '
+            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab cum eveniet repudiandae, possimus natus blanditiis corrupti doloremque est quibusdam a dolorem modi? '
         },
         {
             img:s2,
             name:'Cavity Filling',
-            despription:'ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab cum eveniet repudiandae, possimus natus blanditiis corrupti doloremque est quibusdam'
+            description:'ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab cum eveniet repudiandae, possimus natus blanditiis corrupti doloremque est quibusdam'
 
         },
         {
             img:s3,
             name:'Teath Filling',
-            despription:'ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab cum eveniet repudiandae, possimus natus blanditiis corrupti doloremque est quibusdam'
+            description:'ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ab cum eveniet repudiandae, possimus natus blanditiis corrupti doloremque est quibusdam'
 
         }
     ]
@@ -35,14 +35,14 @@ const ServicesProvide = () => {
                 <h2>Services We Provider</h2>
 
             </div>
+
+            <div className="d-flex  justify-content-center"  >
             {
                 services.map((ser)=><ServicesDetails ser={ser} >
-
-
- 
                 </ServicesDetails>)
-}
-        {/* <ServicesDetails> </ServicesDetails> */}
+                }
+             </div>
+           
 
         </section>
     )
